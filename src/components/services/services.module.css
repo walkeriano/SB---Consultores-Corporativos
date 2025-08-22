@@ -1,0 +1,151 @@
+.contaienrServices {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.874);
+  border-top: 1px solid white;
+  z-index: 1000;
+  margin-top: 20vh;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.containerBg {
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  top: 140px;
+}
+
+.containerBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom left;
+}
+
+.itemsFlex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  gap: 35px;
+}
+
+.contianerTitle {
+  width: 90%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contianerTitle h3 {
+  width: 80%;
+  font-size: 6.5vw;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  text-align: right;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.contianerTitle h3 span {
+  font-weight: 900;
+}
+
+.flexContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 40px;
+}
+
+.flexContact p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #8a8a8a;
+  text-align: right;
+  line-height: 1.2;
+}
+
+.flexBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.flexBtn button {
+  border: none;
+  background-color: #8a8a8a;
+  color: white;
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.flexBtn button .icon {
+  font-size: 1.1rem;
+  transform: rotate(-45deg);
+}
+
+.flexBtn a {
+  width: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexBtn a:nth-child(2) .icon {
+  font-size: 1.7rem;
+}
+
+.flexBtn a .icon {
+  font-size: 1.5rem;
+  color: #8a8a8a;
+}
+
+@media (max-width: 850px) {
+  .contaienrServices {
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+
+  .contianerTitle {
+    width: 90%;
+    height: 75vh;
+  }
+
+  .contianerTitle h3 {
+    width: 100%;
+    font-size: 10.5vw;
+  }
+
+  .containerBg {
+  height: 43vh;
+  top: 100px;
+}
+}

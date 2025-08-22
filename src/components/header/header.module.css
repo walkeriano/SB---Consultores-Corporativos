@@ -1,0 +1,170 @@
+.containerHeader {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  z-index: 100000;
+  background: linear-gradient(to bottom, #003283, #0032839c, #00328300);
+  padding: 20px 20px 0px 20px;
+  animation: l16 2s ease-in-out;
+}
+
+@keyframes l16 {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.containerHeader .ulGeneral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.containerHeader .ulGeneral li {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50px;
+  height: 35px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.containerHeader .ulGeneral li:hover {
+  background-color: white;
+  color: #004a9e;
+}
+
+.flexSocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkIcon {
+  width: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.linkIcon:hover {
+  background-color: white;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.linkIcon:hover .icon {
+  color: #004a9e;
+}
+
+.menuShow {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .containerHeader {
+    width: 100%;
+    height: 95px;
+    padding: 15px 15px 0px 15px;
+  }
+
+  .containerHeader a img {
+    width: 220px;
+    height: 63px;
+  }
+
+  .containerHeader .ulGeneral {
+    display: none;
+  }
+
+  .menuShow {
+    display: flex;
+    width: 60px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .menuShow .icon {
+    font-size: 1.5rem;
+  }
+
+  .menuShowOn {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 1, 36, 0.871);
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(4px);
+  }
+
+  .ulResponsive {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .ulResponsive li {
+    font-size: 10vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+
+  .btnClose {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 1px solid white;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  .btnClose .icon {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .linkIcon {
+    width: 60px;
+  }
+
+  .linkIcon .icon {
+    font-size: 1.8rem;
+  }
+}
