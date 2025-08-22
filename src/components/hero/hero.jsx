@@ -112,9 +112,8 @@ export default function Hero({ id }) {
           </div>
         </section>
       </section>
-      <section className={styles.firstPerson}>
+      <section ref={textRef} className={styles.firstPerson}>
         <Image
-          ref={textRef}
           src="/togeter.png"
           alt="image-presentation"
           fill={true}
