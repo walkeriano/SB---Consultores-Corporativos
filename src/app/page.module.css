@@ -1,6 +1,5 @@
 .main{
-  max-width: 100vw;
-  height: 100svh;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,8 +10,7 @@
 
 .main .span{
   background: linear-gradient(#003283,#696969);
-  width: 100vw;
-  height: 100svh;
+  width: 100%;
   height: 100vh;
   position: fixed;
   top: 0px;

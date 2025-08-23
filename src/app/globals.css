@@ -143,6 +143,7 @@ body {
 body::-webkit-scrollbar {
   background-color: #ffffff2c;
   width: 6px;
+  height: 0px;
 }
 
 body::-webkit-scrollbar-thumb {
