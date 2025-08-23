@@ -125,7 +125,7 @@
   margin-top: 15px;
 }
 
-.containerCalltoAction button {
+.containerCalltoAction .btnContact {
   height: 35px;
   padding: 0px 15px;
   border-radius: 50px;
@@ -142,19 +142,20 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  text-decoration: none;
 }
 
-.containerCalltoAction button .icon {
+.containerCalltoAction .btnContact .icon {
   font-size: 1.1rem;
   transform: rotate(-45deg);
 }
 
-.containerCalltoAction button:hover {
+.containerCalltoAction .btnContact:hover {
   background-color: white;
   color: #004a9e;
 }
 
-.containerCalltoAction a {
+.containerCalltoAction .links {
   text-decoration: none;
   width: 35px;
   aspect-ratio: 1;
@@ -165,20 +166,20 @@
   margin-right: 5px;
 }
 
-.containerCalltoAction a:hover {
+.containerCalltoAction .links:hover {
   background-color: white;
 }
 
-.containerCalltoAction a:hover .icon {
+.containerCalltoAction .links:hover .icon {
   color: #004a9e;
 }
 
-.containerCalltoAction a .icon {
+.containerCalltoAction .links .icon {
   color: white;
   font-size: 1.4rem;
 }
 
-.containerCalltoAction a:nth-child(2) .icon {
+.containerCalltoAction .links:nth-child(2) .icon {
   font-size: 1.7rem;
 }
 

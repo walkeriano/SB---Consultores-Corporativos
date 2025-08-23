@@ -41,14 +41,14 @@ export default function Header() {
         <li onClick={() => scrollToSection("servicios")}>servicios</li>
         <li onClick={() => scrollToSection("contacto")}>contacto</li>
         <div className={styles.flexSocialMedia}>
-          <Link href="/" className={styles.linkIcon}>
+          <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
             <FontAwesomeIcon
               className={styles.icon}
               size="2x"
               icon={faInstagram}
             />
           </Link>
-          <Link href="/" className={styles.linkIcon}>
+          <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
             <FontAwesomeIcon
               className={styles.icon}
               size="2x"
@@ -70,14 +70,14 @@ export default function Header() {
             <li onClick={() => scrollToSection("servicios")}>servicios</li>
             <li onClick={() => scrollToSection("contacto")}>contacto</li>
             <div className={styles.flexSocialMedia}>
-              <Link href="/" className={styles.linkIcon}>
+              <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
                   icon={faInstagram}
                 />
               </Link>
-              <Link href="/" className={styles.linkIcon}>
+              <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"

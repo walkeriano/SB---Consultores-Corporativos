@@ -47,36 +47,44 @@ export default function Hero({ id }) {
       ></script>
       <section className={styles.containerText}>
         <section className={styles.textArea}>
-          <h2>
-            Brenda Barreda & Sayuri Velfhasi
-          </h2>
+          <h2>Brenda Barreda & Sayuri Velfhasi</h2>
           <h1>
             Consultoría <span>legal</span>
           </h1>
           <section className={styles.containerCalltoAction}>
-            <button>
+            <a
+            className={styles.btnContact}
+              href="https://wa.me/51950856453?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               agendar reunión
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"
                 icon={faArrowRight}
               />
-            </button>
-            <Link href="/">
+            </a>
+            <Link
+              className={styles.links}
+              href="https://wa.me/51950856453?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"
                 icon={faWhatsapp}
               />
             </Link>
-            <Link href="/">
+            <Link className={styles.links} href="tel:+51950856453">
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"
                 icon={faPhoneVolume}
               />
             </Link>
-            <Link href="/">
+            <Link className={styles.links} href="mailto: contacto@goskating.com">
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"
@@ -113,11 +121,7 @@ export default function Hero({ id }) {
         </section>
       </section>
       <section ref={textRef} className={styles.firstPerson}>
-        <Image
-          src="/togeter.png"
-          alt="image-presentation"
-          fill={true}
-        />
+        <Image src="/togeter.png" alt="image-presentation" fill={true} />
       </section>
       <section className={styles.womanContainer}>
         <div className={styles.boxImage}>
