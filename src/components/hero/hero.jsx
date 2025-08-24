@@ -25,7 +25,7 @@ export default function Hero({ id }) {
       { scale: 1, y: 0 },
       {
         scale: 1.1,
-        y: 200,
+        y: 100,
         duration: 7,
         ease: "power3.out",
         scrollTrigger: {

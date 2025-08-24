@@ -103,16 +103,28 @@
 
   .menuShow {
     display: flex;
-    width: 60px;
+    width: 50px;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.118);
+    margin: 5px;
+    cursor: pointer;
   }
 
   .menuShow .icon {
     font-size: 1.5rem;
+  }
+
+  .menuShow:hover{
+    background-color: white;
+  }
+
+  .menuShow:hover .icon{
+    color: #003283;
   }
 
   .menuShowOn {
@@ -138,26 +150,44 @@
   }
 
   .ulResponsive li {
-    font-size: 10vw;
+    font-size: 9vw;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 300;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .ulResponsive li:hover{
+    background-color: white;
+    color: #003283;
   }
 
   .btnClose {
     position: absolute;
     top: 25px;
     right: 25px;
-    background-color: rgba(255, 255, 255, 0.253);
+    background-color: rgba(255, 255, 255, 0.118);
     border: 1px solid white;
     width: 50px;
     aspect-ratio: 1;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   .btnClose .icon {
     color: white;
     font-size: 1.5rem;
+  }
+
+  .btnClose:hover{
+    background-color: white;
+  }
+
+  .btnClose:hover .icon{
+    color: #003283;
   }
 
   .linkIcon {
