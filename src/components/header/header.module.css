@@ -139,9 +139,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 1, 36, 0.871);
-    left: 0px;
-    top: 0px;
+    background-color: rgba(0, 1, 36, 0.922);
+    left: -1px;
+    top: -1px;
     backdrop-filter: blur(4px);
   }
 
