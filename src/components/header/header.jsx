@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <section className={styles.containerHeader}>
       <Link href="/">
-        <Image src="/logo-sb.png" alt="logo-sb-legal" width={260} height={75} />
+        <Image src="/logo-sb.png" alt="logo-sb-legal" width={245} height={65} />
       </Link>
       <ul className={styles.ulGeneral}>
         <li onClick={() => scrollToSection("hero")}>inicio</li>

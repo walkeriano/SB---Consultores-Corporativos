@@ -234,7 +234,7 @@
 .firstPerson {
   z-index: -1;
   width: 100%;
-  height: 90vh;
+  height: 86vh;
   position: fixed;
   bottom: 0px;
   animation: l19 2s ease-in-out;

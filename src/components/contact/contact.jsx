@@ -82,8 +82,8 @@ export default function Contact({ id }) {
   };
 
   return (
-    <section id={id} className={styles.containerContacto}>
-      <section ref={formShow} className={styles.containerFlex}>
+    <section  className={styles.containerContacto}>
+      <section id={id} ref={formShow} className={styles.containerFlex}>
         <div className={styles.channelsContact}>
           <h3>
             El primer <span>contacto</span>

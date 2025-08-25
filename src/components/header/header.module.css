@@ -1,15 +1,19 @@
 .containerHeader {
-  position: absolute;
-  top: 0px;
-  width: 100%;
+  position: fixed;
+  top: 2.5%;
+  width: 97%;
+  height: 55px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   color: white;
   z-index: 100000;
-  background: linear-gradient(to bottom, #003283, #0032839c, #00328300);
-  padding: 20px 20px 0px 20px;
+  background-color: rgba(255, 255, 255, 0.033);
   animation: l16 2s ease-in-out;
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
+  padding: 0px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.091);
 }
 
 @keyframes l16 {
