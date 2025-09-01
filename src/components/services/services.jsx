@@ -20,25 +20,54 @@ export default function Services({id}) {
   const services = [
     {
       id: 1,
-      title: "Corporativo",
+      title: "Derecho Administrativo",
       description: "Creamos sitios web modernos y optimizados para SEO.",
       image: "/pic-1.jpg",
     },
     {
       id: 2,
-      title: "Penal",
+      title: "Protección al consumidor",
       description: "Campañas efectivas en Google Ads y redes sociales.",
       image: "/pic-2.jpg",
     },
     {
       id: 3,
-      title: "Judicial",
+      title: "Derecho Municipal",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
       image: "/pic-3.jpg",
     },
     {
       id: 4,
-      title: "Civil",
+      title: "Derecho Penal",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/pic-4.jpg",
+    },
+    {
+      id: 5,
+      title: "Derecho Laboral",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/pic-4.jpg",
+    },
+    {
+      id: 6,
+      title: "Derecho Corporativo",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/pic-4.jpg",
+    },
+    {
+      id: 7,
+      title: "Derecho Civil",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/pic-4.jpg",
+    },
+    {
+      id: 8,
+      title: "Derecho de Familia",
+      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      image: "/pic-4.jpg",
+    },{
+      id: 9,
+      title: "Derecho Registral",
       description: "Te ayudamos a escalar tu negocio con tecnología.",
       image: "/pic-4.jpg",
     },

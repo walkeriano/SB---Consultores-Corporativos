@@ -38,41 +38,6 @@
   line-height: 1.2;
 }
 
-.channels {
-  width: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.channels a {
-  text-decoration: none;
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.channels a:hover {
-  background-color: white;
-}
-
-.channels a .icon {
-  color: white;
-  font-size: 1.6rem;
-}
-
-.channels a:hover .icon {
-  color: #004a9e;
-}
-
-
-
 @media (max-width: 850px) {
   .containerNosotros {
     justify-content: flex-start;
@@ -88,27 +53,19 @@
   }
 
   .containerFlex {
-  width: 90%;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: auto;
-}
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: auto;
+  }
 
-
-.containerFlex p {
-  width: 100%;
-  font-size: 0.9rem;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  line-height: 1.2;
-}
-
-.channels {
-  width: auto;
-  flex-direction: row;
-  gap: 0px;
-}
-
+  .containerFlex p {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+  }
 }

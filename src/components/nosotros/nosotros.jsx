@@ -2,9 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./nosotros.module.css";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,33 +48,28 @@ export default function Nosotros({ id }) {
 
   return (
     <section id={id} className={styles.containerNosotros}>
-      <h2 ref={titleRef}>igualdad, justicia, lealtad, respeto, experiencia</h2>
+      <h2 ref={titleRef}>igualdad, justicia, lealtad, experiencia</h2>
       <section className={styles.containerFlex}>
         <p ref={textRef}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essen tially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum
+          S&B Consultores Corporativos SAC, nuestra misión es ser el
+          socio legal de confianza, ofreciendo soluciones corporativas y
+          jurídicas de la más alta calidad. Nos dedicamos a comprender a fondo
+          los desafíos de su negocio para brindar un asesoramiento estratégico y
+          proactivo que no solo resuelve problemas, sino que también previene
+          riesgos y optimiza el crecimiento. Con un enfoque en la integridad, la
+          eficiencia y el profesionalismo, buscamos proteger sus activos,
+          asegurar el cumplimiento normativo y fortalecer su estructura
+          empresarial, permitiéndole centrarse en lo que mejor sabe hacer.
+          Nuestra visión es ser la consultora legal corporativa líder en
+          el mercado, reconocida por nuestra excelencia técnica, pensamiento
+          innovador y un servicio al cliente excepcional. Aspiramos a ser el
+          referente en el ámbito de la consultoría empresarial, estableciendo
+          nuevos estándares de asesoramiento jurídico que impulsen el éxito de
+          nuestros clientes. Buscamos construir relaciones de largo plazo,
+          convirtiéndonos en un pilar fundamental para el desarrollo sostenible
+          y la expansión de las empresas a las que servimos, contribuyendo así a
+          un ecosistema empresarial más fuerte y ético.
         </p>
-        <section className={styles.channels}>
-          <Link href="/">
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faInstagram}
-            />
-          </Link>
-          <Link href="/">
-            <FontAwesomeIcon
-              className={styles.icon}
-              size="2x"
-              icon={faFacebook}
-            />
-          </Link>
-        </section>
       </section>
     </section>
   );
