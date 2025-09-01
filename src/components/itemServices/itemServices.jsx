@@ -166,7 +166,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-2.jpg"
+            src="/pic-6.jpg"
             alt="Protección al consumidor"
             fill
             quality={75}
@@ -231,7 +231,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-3.jpg"
+            src="/pic-8.jpg"
             alt="Derecho Municipal"
             fill
             quality={75}
@@ -297,7 +297,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-4.jpg"
+            src="/pic-2.jpg"
             alt="Derecho Penal"
             fill
             quality={75}
@@ -378,7 +378,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-4.jpg"
+            src="/pic-7.jpg"
             alt="Derecho Laboral"
             fill
             quality={75}
@@ -447,7 +447,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-4.jpg"
+            src="/pic-5.jpg"
             alt="Derecho Corporativo"
             fill
             quality={75}
@@ -511,7 +511,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-4.jpg"
+            src="/pic-9.jpg"
             alt="Derecho Civil"
             fill
             quality={75}
@@ -576,7 +576,7 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-4.jpg"
+            src="/pic-10.jpg"
             alt="Derecho de Familia"
             fill
             quality={75}

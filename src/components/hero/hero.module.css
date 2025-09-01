@@ -127,12 +127,12 @@
 }
 
 .containerCalltoAction .btnContact {
-  height: 35px;
-  padding: 0px 15px;
+  height: 45px;
+  padding: 0px 20px;
   border-radius: 50px;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.225);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
