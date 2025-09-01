@@ -71,6 +71,8 @@
   color: #004a9e;
 }
 
+
+
 @media (max-width: 850px) {
   .containerNosotros {
     justify-content: flex-start;

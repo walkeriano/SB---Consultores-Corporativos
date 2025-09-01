@@ -63,14 +63,27 @@ export default function ItemServices({ title, description, image }) {
   return (
     <section ref={el} className={styles.itemReady}>
       {change ? (
-        <button className={styles.btnOpen} onClick={() => setChange(false)}>
-          <p>{title}</p>
-          <FontAwesomeIcon
-            className={styles.icon}
-            size="2x"
-            icon={faArrowRight}
-          />
-        </button>
+        <section className={styles.containerBtnService}>
+          <button className={styles.btnOpen} onClick={() => setChange(false)}>
+            <h4>{title}</h4>
+            <div className={styles.btnContactItem}>
+              <p>ver más</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faArrowRight}
+              />
+            </div>
+          </button>
+          <button className={styles.contact}>
+              <p>Reservar reunión</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faWhatsapp}
+              />
+            </button>
+        </section>
       ) : (
         <div className={styles.containerShow}>
           <h2>{title}</h2>
@@ -84,7 +97,7 @@ export default function ItemServices({ title, description, image }) {
                 icon={faArrowRight}
               />
             </button>
-            <button className={styles.contact} onClick={() => setChange(true)}>
+            <button className={styles.contact}>
               <p>Reservar reunión</p>
               <FontAwesomeIcon
                 className={styles.icon}

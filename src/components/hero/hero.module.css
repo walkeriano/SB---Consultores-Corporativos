@@ -300,14 +300,14 @@
     margin-top: 0px;
   }
 
-  .containerCalltoAction button {
-    height: 35px;
-    padding: 0px 10px;
-    font-size: 0.8rem;
-  }
+  .containerCalltoAction .btnContact {
+  font-size: 0.7rem;
+  letter-spacing: 0,5;
+}
 
-  .containerCalltoAction button .icon {
-    font-size: 0.9rem;
+
+  .containerCalltoAction .btnContact .icon {
+    font-size: 1rem;
   }
 
   .firstPerson {

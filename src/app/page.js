@@ -5,6 +5,7 @@ import Head from "next/head";
 import Loading from "@/components/loading/loading";
 import Hero from "@/components/hero/hero";
 import Nosotros from "@/components/nosotros/nosotros";
+import Presentation from "@/components/presentation/presentation";
 import Services from "@/components/services/services";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
@@ -70,6 +71,7 @@ export default function Home() {
           <section className={styles.containerMain}>
             <Hero id="hero" />
             <Nosotros id="nosotros" />
+            <Presentation/>
             <Services id="servicios" />
             <Contact id="contacto" />
             <Footer />

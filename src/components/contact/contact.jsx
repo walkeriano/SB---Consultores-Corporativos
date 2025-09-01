@@ -126,7 +126,7 @@ export default function Contact({ id }) {
                 <input
                   type="number"
                   placeholder="Teléfono"
-                  name="name"
+                  name="Telefono"
                   required
                 />
                 <FontAwesomeIcon
@@ -138,7 +138,7 @@ export default function Contact({ id }) {
             </div>
             <div className={styles.flexInputs}>
               <label htmlFor="">
-                <input type="email" placeholder="Email" name="name" required />
+                <input type="email" placeholder="Email" name="Email" required />
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
@@ -149,7 +149,7 @@ export default function Contact({ id }) {
                 <input
                   type="text"
                   placeholder="Servicio"
-                  name="name"
+                  name="Servicio"
                   required
                 />
                 <FontAwesomeIcon

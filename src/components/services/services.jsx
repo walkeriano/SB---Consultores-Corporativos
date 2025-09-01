@@ -68,13 +68,12 @@ export default function Services({id}) {
     <section id={id} className={styles.contaienrServices}>
       <section  ref={textRef} className={styles.contianerTitle}>
         <h3>
-          servicios &<br />
-          <span>asesorías</span>
+          asesorías &<br />
+          <span>consultorías</span>
         </h3>
         <section className={styles.flexContact}>
           <p>
-            Especialistas en todo el ambito legal,
-            <br /> corporativo y judicial
+            Especialistas en todo el ambito legal, corporativo y judicial
           </p>
           <div className={styles.flexBtn}>
             <button>

@@ -50,7 +50,7 @@
 
 .contianerTitle h3 {
   width: 80%;
-  font-size: 6.5vw;
+  font-size: 5.5vw;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #8a8a8a;
@@ -141,11 +141,26 @@
 
   .contianerTitle h3 {
     width: 100%;
-    font-size: 10.5vw;
+    font-size: 8.5vw;
   }
 
   .containerBg {
-  height: 43vh;
-  top: 100px;
-}
+    height: 43vh;
+    top: 70px;
+  }
+
+  .flexContact p {
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .flexBtn button {
+    font-size: 0.8rem;
+  }
+
+  .flexBtn button .icon {
+    font-size: 1.1rem;
+    transform: rotate(-45deg);
+  }
 }
