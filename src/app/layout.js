@@ -21,8 +21,8 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "SB - Asesoría corporativa y Consultoría legal",
-  description: "Asesoría corporativa y Consultoría legal",
+  title: "SB - Consultores Corporativos",
+  description: "SB - Asesoría y Consultoría Corporativa legal",
 };
 
 export default function RootLayout({ children }) {

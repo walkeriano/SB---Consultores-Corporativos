@@ -28,42 +28,30 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-          Quesada Coach App - Planes de entrenamiento y nutrición personalizados
-          creados por expertos
+          SB - Consultores Corporativos - Asesoría y Consultoría Corporativa
+          legal
         </title>
         <meta
           name="description"
-          content="Descubre Quesada Coach App, Planes de entrenamiento y nutrición personalizados creados por
-            expertos, diseñados para transformar tu cuerpo y tu vida"
+          content="Soluciones corporativas y jurídicas de la más alta calidad. Nos dedicamos a comprender a fondo los desafíos de su negocio para brindar un asesoramiento estratégico y proactivo que no solo resuelve problemas, sino que también previene riesgos y optimiza el crecimiento."
         />
         <meta name="robots" content="index, follow" />
         <meta
           name="keywords"
-          content="fitness, Quesada Coach, alimentación saludalbe, bienestar, entrenamiento personalizado"
+          content="asesoría legal, estudio de abogados, abogados, consultoría legal, derecho administrativo, protección al consumidor, derecho municipal, derecho penal, derecho laboral, derecho corporativo, derecho civil, derecho de familia, derecho registral"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="https://quesadacoach.com/logo512.png"
-        />
         <meta
           property="og:title"
-          content="Quesada Coach App - Planes de entrenamiento y nutrición personalizados
-          creados por expertos"
+          content="SB - Consultores Corporativos - Asesoría y Consultoría Corporativa legal"
         />
         <meta
           property="og:description"
-          content="Descubre Quesada Coach App, Planes de entrenamiento y nutrición personalizados creados por
-            expertos, diseñados para transformar tu cuerpo y tu vida."
+          content="asesoría legal, estudio de abogados, abogados, consultoría legal, derecho administrativo, protección al consumidor, derecho municipal, derecho penal, derecho laboral, derecho corporativo, derecho civil, derecho de familia, derecho registral."
         />
-        <meta
-          property="og:image"
-          content="https://quesadacoach.com/logo512.png"
-        />
-        <meta property="og:url" content="https://quesadacoach.com" />
+        <meta property="og:url" content="https://www.sbconsultorescorporativos.com.pe" />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://quesadacoach.com" />
+        <link rel="canonical" href="https://www.sbconsultorescorporativos.com.pe" />
       </Head>
       <main className={styles.main}>
         {loading ? (
@@ -72,7 +60,7 @@ export default function Home() {
           <section className={styles.containerMain}>
             <Hero id="hero" />
             <Nosotros id="nosotros" />
-            <Presentation/>
+            <Presentation />
             <Services id="servicios" />
             <ItemServices />
             <Contact id="contacto" />
