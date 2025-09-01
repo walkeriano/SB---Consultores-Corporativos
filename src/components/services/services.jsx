@@ -1,6 +1,3 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./services.module.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,97 +10,128 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function Services({id}) {
-    const textRef = useRef(null);
+export default function Services({ id }) {
   const services = [
     {
       id: 1,
       title: "Derecho Administrativo",
-      description: "Creamos sitios web modernos y optimizados para SEO.",
+      description: [
+        "Acreditación y certificación de establecimientos de salud.",
+        "Revisión e implementación de los títulos habilitantes y condiciones legales y técnicas que autorizan el funcionamiento del establecimiento de salud.",
+        "Implementación del libro de reclamaciones – Susalud.",
+        "Registro sanitario de productos: Tramitamos el registro de productos dietéticos y edulcorantes.",
+        "Modificaciones y reinscripciones: Gestionamos las modificaciones post-registro (cambios en el titular, fabricante, fórmulas, etc.) y las reinscripciones para mantener su registro vigente.",
+        "Asesoría técnica y legal: Brindamos orientación experta para la elaboración de expedientes técnicos y el cumplimiento de las normativas vigentes.",
+        "Asesoría en saneamiento ambiental: Brindamos consultoría para el cumplimiento de las normativas de calidad de agua, control de vectores y manejo de residuos sólidos.",
+      ],
       image: "/pic-1.jpg",
     },
     {
       id: 2,
       title: "Protección al consumidor",
-      description: "Campañas efectivas en Google Ads y redes sociales.",
+      description: [
+        "Implementación de manual de protección al consumidor.",
+        "Capacitaciones relacionadas a las normas de protección al consumidor en relación a cada negocio.",
+        "Atención de reclamos y/o quejas interpuestas en libro de reclamaciones físico y/o virtual, plataforma virtual del Indecopi (reclama virtual).",
+        "Solución de controversias. ",
+        "Contacto directo con clientes con la finalidad de llegar a un acuerdo transaccional, velando por mitigar cualquier riesgo. Elaboración de acuerdos extrajudiciales.",
+        "Absolución de requerimientos, cartas emitidas por el Indecopi.",
+        "Denuncias Administrativas Sancionadoras.",
+      ],
       image: "/pic-2.jpg",
     },
     {
       id: 3,
       title: "Derecho Municipal",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Multas Municipales.",
+        "Declaratoria de Fábrica (regularización de construcciones).",
+        "Actualizacion de titular contribuyente.",
+        "Actualizacion de Autovaluo. ",
+        "Reclamos ante la Administración Pública.",
+      ],
       image: "/pic-3.jpg",
     },
     {
       id: 4,
       title: "Derecho Penal",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Procesos penales relacionados al delito de hurto con la finalidad de obtener un resultado favorable y se pueda realizar una deducción al IGV e impuesto a la renta (elaboración de denuncia, impulso a través de escritos, absolución de requerimientos a nivel fiscal y/o policial, asistencia a diligencias en calidad de abogado y/o representante legal)",
+      ],
       image: "/pic-4.jpg",
     },
     {
       id: 5,
       title: "Derecho Laboral",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Desvinculaciones, procedimientos de despido (análisis del caso en particular, elaboración de carta de preaviso de despido y de despido).",
+        "Elaboración de medidas disciplinarias.",
+        "Capacitaciones sociolaborales.",
+        "Implementación de procesos de hostigamiento sexual laboral, clima laboral, medidas disciplinarias, rotaciones.",
+        "Capacitación especializada sobre hostigamiento sexual laboral. ",
+        "Procedimientos Administrativos ante Sunafil (desde requerimiento de información hasta el acta de infracción).",
+        "Auditorias de cumplimiento de Sunafil.",
+        "Representación y patrocinio en procedimientos extrajudiciales y judiciales.",
+      ],
       image: "/pic-4.jpg",
     },
     {
       id: 6,
       title: "Derecho Corporativo",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Implementación de Gobierno Corporativo.",
+        "Protección de datos personales:",
+        "Registro de bases de datos personales.",
+        "Implementación de políticas de tratamiento adecuado de las bases de datos personales.",
+        "Asesoría en la adopción y cumplimiento de medidas de seguridad exigidas por la Ley N° 29733 y su Reglamento.",
+      ],
       image: "/pic-4.jpg",
     },
     {
       id: 7,
       title: "Derecho Civil",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Contratos de prestación de servicios.",
+        "Contratos de arrendamiento y usufructo (elaboración hasta inscripción en SUNARP).",
+        "Contratos de compraventa.",
+      ],
       image: "/pic-4.jpg",
     },
     {
       id: 8,
       title: "Derecho de Familia",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Pensión de Alimentos",
+        "Tenencia y Régimen de Visitas",
+        "Violencia Familiar.",
+        "Divorcio",
+        "Sucesiones (Herencias)",
+        "Derecho Corporativo",
+        "Constitución de empresas.",
+      ],
       image: "/pic-4.jpg",
-    },{
+    },
+    {
       id: 9,
       title: "Derecho Registral",
-      description: "Te ayudamos a escalar tu negocio con tecnología.",
+      description: [
+        "Regularización de predios.",
+        "Saneamiento.",
+        "Tramites notariales y registrales.",
+      ],
       image: "/pic-4.jpg",
     },
   ];
 
-    useEffect(() => {
-      // 🔹 Animación para el texto (entra desde la izquierda)
-      gsap.fromTo(
-        textRef.current,
-        { opacity: 0, x: 100 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 4,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: textRef.current,
-            start: "top 90%",
-            end: "top 30%",
-            scrub: true, // efecto ligado al scroll
-          },
-        }
-      );
-    }, []);
-
   return (
     <section id={id} className={styles.contaienrServices}>
-      <section  ref={textRef} className={styles.contianerTitle}>
+      <section className={styles.contianerTitle}>
         <h3>
           asesorías &<br />
           <span>consultorías</span>
         </h3>
         <section className={styles.flexContact}>
-          <p>
-            Especialistas en todo el ambito legal, corporativo y judicial
-          </p>
+          <p>Especialistas en todo el ambito legal, corporativo y judicial</p>
           <div className={styles.flexBtn}>
             <button>
               agendar reunión

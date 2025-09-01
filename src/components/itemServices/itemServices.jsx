@@ -76,18 +76,22 @@ export default function ItemServices({ title, description, image }) {
             </div>
           </button>
           <button className={styles.contact}>
-              <p>Reservar reunión</p>
-              <FontAwesomeIcon
-                className={styles.icon}
-                size="2x"
-                icon={faWhatsapp}
-              />
-            </button>
+            <p>Reservar reunión</p>
+            <FontAwesomeIcon
+              className={styles.icon}
+              size="2x"
+              icon={faWhatsapp}
+            />
+          </button>
         </section>
       ) : (
         <div className={styles.containerShow}>
           <h2>{title}</h2>
-          <h3>{description}</h3>
+          <ul>
+            {description.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
           <div className={styles.containerBtns}>
             <button className={styles.mini} onClick={() => setChange(true)}>
               <p>Minimizar</p>
