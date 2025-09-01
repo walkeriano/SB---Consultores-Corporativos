@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, memo } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./nosotros.module.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Nosotros({ id }) {
+function Nosotros({ id }) {
   const titleRef = useRef(null);
   const textRef = useRef(null);
 
@@ -74,3 +74,5 @@ export default function Nosotros({ id }) {
     </section>
   );
 }
+
+export default memo(Nosotros);

@@ -1,9 +1,10 @@
+import React, { memo } from "react";
 import styles from "./presentation.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-export default function Presentation() {
+function Presentation() {
   return (
     <section className={styles.presentation}>
       <section className={styles.containerGeneral}>
@@ -79,3 +80,5 @@ export default function Presentation() {
     </section>
   );
 }
+
+export default memo(Presentation);

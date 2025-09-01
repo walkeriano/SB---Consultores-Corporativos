@@ -7,6 +7,7 @@ import Hero from "@/components/hero/hero";
 import Nosotros from "@/components/nosotros/nosotros";
 import Presentation from "@/components/presentation/presentation";
 import Services from "@/components/services/services";
+import ItemServices from "@/components/itemServices/itemServices";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 
@@ -73,6 +74,7 @@ export default function Home() {
             <Nosotros id="nosotros" />
             <Presentation/>
             <Services id="servicios" />
+            <ItemServices />
             <Contact id="contacto" />
             <Footer />
           </section>

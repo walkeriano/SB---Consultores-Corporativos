@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, memo } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./contact.module.css";
@@ -14,7 +14,7 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Contact({ id }) {
+function Contact({ id }) {
   const formShow = useRef(null);
 
   const formRef = useRef(null);
@@ -186,3 +186,5 @@ export default function Contact({ id }) {
     </section>
   );
 }
+
+export default memo(Contact);

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, memo } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "./hero.module.css";
@@ -15,7 +15,7 @@ import {
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Hero({ id }) {
+function Hero({ id }) {
   const textRef = useRef(null);
 
   useEffect(() => {
@@ -121,19 +121,21 @@ export default function Hero({ id }) {
         </section>
       </section>
       <section ref={textRef} className={styles.firstPerson}>
-        <Image src="/togeter.png" alt="image-presentation" fill={true} />
+        <Image src="/togeter.png" alt="image-presentation" fill priority />
       </section>
       <section className={styles.womanContainer}>
         <div className={styles.boxImage}>
-          <Image src="/woman-right.png" alt="image-presentation" fill={true} />
+          <Image src="/woman-right.png" alt="image-presentation" fill priority />
         </div>
         <div className={styles.boxImageTwo}>
-          <Image src="/woman-left.png" alt="image-presentation" fill={true} />
+          <Image src="/woman-left.png" alt="image-presentation" fill priority />
         </div>
       </section>
       <section className={styles.allImage}>
-        <Image src="/bg-texture.jpg" alt="image-presentation" fill={true} />
+        <Image src="/bg-texture.jpg" alt="image-presentation" fill priority />
       </section>
     </section>
   );
 }
+
+export default memo(Hero);
