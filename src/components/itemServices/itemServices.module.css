@@ -10,8 +10,7 @@
   gap: 30px;
 }
 .itemReady {
-  background-color: rgb(195, 195, 195);
-  width: 90%;
+  width: 85%;
   height: 55vh;
   border-radius: 40px;
   display: flex;
@@ -45,12 +44,11 @@
   border: 1px solid rgba(255, 255, 255, 0.632);
   background-color: rgba(255, 255, 255, 0.248);
   width: 95%;
-  height: 45px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   backdrop-filter: blur(10px);
 }
@@ -61,6 +59,7 @@
   letter-spacing: 1px;
   font-weight: 500;
   color: white;
+  text-align: left;
 }
 
 .btnOpen:hover h4 {
@@ -225,7 +224,7 @@
 @media (max-width: 850px) {
   .itemReady {
     background-color: rgb(195, 195, 195);
-    width: 90%;
+    width: 95%;
     height: 55vh;
     border-radius: 40px;
     display: flex;
