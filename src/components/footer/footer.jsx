@@ -27,9 +27,11 @@ export default function Footer() {
         </section>
         <section className={styles.rightFooter}>
           <ul>
-            <li>993 744 957</li>
-            <li>contacto@gmail.com</li>
-            <li>Lima, Perú</li>
+            <li>+51 962 240 973</li>
+            <li>+51 957 839 801</li>
+            <li>+511 6476537</li>
+            <li>brenda.barreda@consultorescorporativos.com.pe</li>
+            <li>Av. Arequipa N° 4130, Oficina 302, Miraflores</li>
           </ul>
           <div className={styles.socialMediaFooter}>
             <Link href="/" className={styles.btnSocial}>
@@ -46,7 +48,9 @@ export default function Footer() {
                 icon={faFacebook}
               />
             </Link>
-            <Link href="/" className={styles.btnSocial}>
+            <Link               href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+              target="_blank"
+              rel="noopener noreferrer" className={styles.btnSocial}>
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"

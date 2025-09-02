@@ -1,7 +1,8 @@
 import React, { memo } from "react";
 import styles from "./presentation.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhoneVolume, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 function Presentation() {
@@ -12,7 +13,7 @@ function Presentation() {
           <h2>
             Sayuri
             <br />
-            <span>Valfhesi</span>
+            <span>Quispe</span>
           </h2>
           <h3>Abogada Senior</h3>
           <section className={styles.descripcionPerson}>
@@ -25,18 +26,29 @@ function Presentation() {
               electronic typesetting.
             </p>
             <div className={styles.channelsContact}>
-              <Link href="/">
+              <Link
+                href="https://wa.me/51957839801?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
-                  icon={faInstagram}
+                  icon={faWhatsapp}
                 />
               </Link>
-              <Link href="/">
+              <Link href="tel:+51957839801">
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
-                  icon={faFacebook}
+                  icon={faPhoneVolume}
+                />
+              </Link>
+              <Link href="mailto: sayuri.quispe@consultorescorporativos.com.pe">
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  size="2x"
+                  icon={faEnvelope}
                 />
               </Link>
             </div>
@@ -59,18 +71,29 @@ function Presentation() {
               electronic typesetting.
             </p>
             <div className={styles.channelsContact}>
-              <Link href="/">
+              <Link
+                href="https://wa.me/51962240973?text=Hola%20¿me%20quiero%20inscribirme%20ahora"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
-                  icon={faInstagram}
+                  icon={faWhatsapp}
                 />
               </Link>
-              <Link href="/">
+              <Link href="tel:+51962240973">
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
-                  icon={faFacebook}
+                  icon={faPhoneVolume}
+                />
+              </Link>
+              <Link href="mailto: brenda.barreda@consultorescorporativos.com.pe">
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  size="2x"
+                  icon={faEnvelope}
                 />
               </Link>
             </div>
