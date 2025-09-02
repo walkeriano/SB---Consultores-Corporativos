@@ -47,7 +47,7 @@ function Hero({ id }) {
       ></script>
       <section className={styles.containerText}>
         <section className={styles.textArea}>
-          <h2>Sayuri Valfhesi & Brenda Barreda</h2>
+          <h2>Sayuri Quispe & Brenda Barreda</h2>
           <h1>
             Consultoría <span>legal</span>
           </h1>
