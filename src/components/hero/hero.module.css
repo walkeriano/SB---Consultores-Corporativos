@@ -238,15 +238,21 @@
   height: 86vh;
   position: fixed;
   bottom: 0px;
-  animation: l19 2s ease-in-out;
+  animation: l19 2.5s ease-in-out;
 }
 
 @keyframes l19 {
   0% {
     transform: translateY(100px);
+    opacity: 0.0;
+  }
+  50% {
+    transform: translateY(100px);
+    opacity: 0.0;
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 
