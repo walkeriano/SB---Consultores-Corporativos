@@ -6,7 +6,7 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 gsap.registerPlugin(ScrollToPlugin);
@@ -41,14 +41,22 @@ export default function Header() {
         <li onClick={() => scrollToSection("servicios")}>servicios</li>
         <li onClick={() => scrollToSection("contacto")}>contacto</li>
         <div className={styles.flexSocialMedia}>
-          <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+          <Link
+            href="https://www.linkedin.com/in/sb-consultores-corporativos-sac-026920384/"
+            target="_blank"
+            className={styles.linkIcon}
+          >
             <FontAwesomeIcon
               className={styles.icon}
               size="2x"
-              icon={faInstagram}
+              icon={faLinkedin}
             />
           </Link>
-          <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+          <Link
+            href="https://www.facebook.com/Comopezenelaula"
+            target="_blank"
+            className={styles.linkIcon}
+          >
             <FontAwesomeIcon
               className={styles.icon}
               size="2x"
@@ -58,26 +66,36 @@ export default function Header() {
         </div>
       </ul>
       {show ? (
-        <section onClick={()=>setShow(false)} className={styles.menuShow}>
+        <section onClick={() => setShow(false)} className={styles.menuShow}>
           <FontAwesomeIcon className={styles.icon} size="2x" icon={faBars} />
         </section>
       ) : (
         <section className={styles.menuShowOn}>
-          <button onClick={()=>setShow(true)} className={styles.btnClose}><FontAwesomeIcon className={styles.icon} size="2x" icon={faXmark} /></button>
+          <button onClick={() => setShow(true)} className={styles.btnClose}>
+            <FontAwesomeIcon className={styles.icon} size="2x" icon={faXmark} />
+          </button>
           <ul className={styles.ulResponsive}>
             <li onClick={() => scrollToSection("hero")}>inicio</li>
             <li onClick={() => scrollToSection("nosotros")}>nosotros</li>
             <li onClick={() => scrollToSection("servicios")}>servicios</li>
             <li onClick={() => scrollToSection("contacto")}>contacto</li>
             <div className={styles.flexSocialMedia}>
-              <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+              <Link
+                href="http://linkedin.com/in/sb-consultores-corporativos-sac-026920384/"
+                target="_blank"
+                className={styles.linkIcon}
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"
-                  icon={faInstagram}
+                  icon={faLinkedin}
                 />
               </Link>
-              <Link href="https://www.facebook.com/Comopezenelaula" target="_blank" className={styles.linkIcon}>
+              <Link
+                href="https://www.facebook.com/Comopezenelaula"
+                target="_blank"
+                className={styles.linkIcon}
+              >
                 <FontAwesomeIcon
                   className={styles.icon}
                   size="2x"

@@ -20,7 +20,7 @@ function Services({ id }) {
           <span>consultorías</span>
         </h3>
         <section className={styles.flexContact}>
-          <p>Especialistas en todo el ambito legal, corporativo y judicial</p>
+          <p>Especialistas en consultoría corporativa y legal</p>
           <div className={styles.flexBtn}>
             <button>
               agendar reunión

@@ -84,7 +84,7 @@ function Hero({ id }) {
                 icon={faPhoneVolume}
               />
             </Link>
-            <Link className={styles.links} href="mailto: contacto@goskating.com">
+            <Link className={styles.links} href="mailto: sbconsultorescorporativos@gmail.com">
               <FontAwesomeIcon
                 className={styles.icon}
                 size="2x"

@@ -82,7 +82,7 @@ function Contact({ id }) {
   };
 
   return (
-    <section  className={styles.containerContacto}>
+    <section className={styles.containerContacto}>
       <section id={id} ref={formShow} className={styles.containerFlex}>
         <div className={styles.channelsContact}>
           <h3>
@@ -174,7 +174,7 @@ function Contact({ id }) {
         <h3>Encuentranos facilmente</h3>
         <section className={styles.mapbox}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.805097786735!2d-77.0319887246377!3d-12.125484043372037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81ec5d54d07%3A0xe9df3ef854963a95!2sAv.%20Jos%C3%A9%20Larco%2C%20Miraflores%2015074%2C%20Per%C3%BA!5e0!3m2!1ses!2ses!4v1746188563144!5m2!1ses!2ses"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0698314107353!2d-77.0330466928076!3d-12.107371958611163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86adac34e83%3A0x4a81eb205674b374!2sAv.%20Arequipa%204130%2C%20Miraflores%2015046%2C%20Per%C3%BA!5e0!3m2!1ses-419!2ses!4v1758629500452!5m2!1ses-419!2ses"
             width="100%"
             height="100%"
             allowFullScreen
