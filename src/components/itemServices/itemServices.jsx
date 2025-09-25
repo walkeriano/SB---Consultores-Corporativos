@@ -10,6 +10,75 @@ export default function ItemServices() {
 
   return (
     <section className={styles.itemsFlex}>
+      {/* Servicio 6 */}
+      <section className={styles.itemReady}>
+        {activeId === 6 ? (
+          <div className={styles.containerShow}>
+            <h2>Derecho Corporativo</h2>
+            <ul>
+              <li>Implementación de Gobierno Corporativo.</li>
+              <li>Protección de datos personales.</li>
+              <li>Registro de bases de datos personales.</li>
+              <li>
+                Implementación de políticas de tratamiento adecuado de las bases
+                de datos personales.
+              </li>
+              <li>
+                Asesoría en la adopción y cumplimiento de medidas de seguridad
+                exigidas por la Ley N° 29733 y su Reglamento.
+              </li>
+            </ul>
+            <div className={styles.containerBtns}>
+              <button className={styles.mini} onClick={() => setActiveId(null)}>
+                <p>Minimizar</p>
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  size="2x"
+                  icon={faArrowRight}
+                />
+              </button>
+              <button className={styles.contact}>
+                <p>Reservar reunión</p>
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  size="2x"
+                  icon={faWhatsapp}
+                />
+              </button>
+            </div>
+          </div>
+        ) : (
+          <section className={styles.containerBtnService}>
+            <button className={styles.btnOpen} onClick={() => setActiveId(6)}>
+              <h4>Derecho Corporativo</h4>
+              <div className={styles.btnContactItem}>
+                <p>ver más</p>
+                <FontAwesomeIcon
+                  className={styles.icon}
+                  size="2x"
+                  icon={faArrowRight}
+                />
+              </div>
+            </button>
+            <button className={styles.contact}>
+              <p>Reservar reunión</p>
+              <FontAwesomeIcon
+                className={styles.icon}
+                size="2x"
+                icon={faWhatsapp}
+              />
+            </button>
+          </section>
+        )}
+        <Image
+          src="/pic-5.jpg"
+          alt="Derecho Corporativo"
+          fill
+          quality={75}
+          loading="lazy"
+        />
+      </section>
+
       {/* Servicio 1 */}
       <section className={styles.itemReady}>
         {activeId === 1 ? (
@@ -166,12 +235,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-6.jpg"
-            alt="Protección al consumidor"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-6.jpg"
+          alt="Protección al consumidor"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
 
       {/* Servicio 3 */}
@@ -231,12 +300,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-8.jpg"
-            alt="Derecho Municipal"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-8.jpg"
+          alt="Derecho Municipal"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
 
       {/* Servicio 4 */}
@@ -297,12 +366,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-2.jpg"
-            alt="Derecho Penal"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-2.jpg"
+          alt="Derecho Penal"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
 
       {/* Servicio 5 */}
@@ -378,81 +447,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-7.jpg"
-            alt="Derecho Laboral"
-            fill
-            quality={75}
-            loading="lazy"
-          />
-      </section>
-
-      {/* Servicio 6 */}
-      <section className={styles.itemReady}>
-        {activeId === 6 ? (
-          <div className={styles.containerShow}>
-            <h2>Derecho Corporativo</h2>
-            <ul>
-              <li>Implementación de Gobierno Corporativo.</li>
-              <li>Protección de datos personales.</li>
-              <li>Registro de bases de datos personales.</li>
-              <li>
-                Implementación de políticas de tratamiento adecuado de las bases
-                de datos personales.
-              </li>
-              <li>
-                Asesoría en la adopción y cumplimiento de medidas de seguridad
-                exigidas por la Ley N° 29733 y su Reglamento.
-              </li>
-            </ul>
-            <div className={styles.containerBtns}>
-              <button className={styles.mini} onClick={() => setActiveId(null)}>
-                <p>Minimizar</p>
-                <FontAwesomeIcon
-                  className={styles.icon}
-                  size="2x"
-                  icon={faArrowRight}
-                />
-              </button>
-              <button className={styles.contact}>
-                <p>Reservar reunión</p>
-                <FontAwesomeIcon
-                  className={styles.icon}
-                  size="2x"
-                  icon={faWhatsapp}
-                />
-              </button>
-            </div>
-          </div>
-        ) : (
-          <section className={styles.containerBtnService}>
-            <button className={styles.btnOpen} onClick={() => setActiveId(6)}>
-              <h4>Derecho Corporativo</h4>
-              <div className={styles.btnContactItem}>
-                <p>ver más</p>
-                <FontAwesomeIcon
-                  className={styles.icon}
-                  size="2x"
-                  icon={faArrowRight}
-                />
-              </div>
-            </button>
-            <button className={styles.contact}>
-              <p>Reservar reunión</p>
-              <FontAwesomeIcon
-                className={styles.icon}
-                size="2x"
-                icon={faWhatsapp}
-              />
-            </button>
-          </section>
-        )}
-        <Image
-            src="/pic-5.jpg"
-            alt="Derecho Corporativo"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-7.jpg"
+          alt="Derecho Laboral"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
 
       {/* Servicio 7 */}
@@ -511,12 +511,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-9.jpg"
-            alt="Derecho Civil"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-9.jpg"
+          alt="Derecho Civil"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
 
       {/* Servicio 8 */}
@@ -576,12 +576,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-10.jpg"
-            alt="Derecho de Familia"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-10.jpg"
+          alt="Derecho de Familia"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
 
       {/* Servicio 9 */}
@@ -637,12 +637,12 @@ export default function ItemServices() {
           </section>
         )}
         <Image
-            src="/pic-4.jpg"
-            alt="Derecho Registral"
-            fill
-            quality={75}
-            loading="lazy"
-          />
+          src="/pic-4.jpg"
+          alt="Derecho Registral"
+          fill
+          quality={75}
+          loading="lazy"
+        />
       </section>
     </section>
   );
